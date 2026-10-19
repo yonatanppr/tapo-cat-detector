@@ -1,3 +1,7 @@
+## Writing
+
+Write docs, comments, and commit messages short and plain. Only write prose when a reader needs it: don't add READMEs, summaries, or design notes nobody asked for. Code comments say why, not what. `scripts/prose_guard.py` blocks common AI-writing tells and markdown files over 200 lines. It runs after every Claude edit and in the git `pre-commit` and `commit-msg` hooks. When it fires, rewrite the text (the `humanizer` skill helps); don't just swap words. After cloning, enable the git hooks with `git config core.hooksPath .githooks`.
+
 ## Agent skills
 
 ### Issue tracker
